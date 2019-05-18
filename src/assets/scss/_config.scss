@@ -1,0 +1,50 @@
+//Mixins
+
+@mixin translateY($e){
+    -webkit-transform: translateY($e);
+    -moz-transform: translateY($e);
+    transform: translateY($e);
+}
+
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
+
+//vars
+
+$black: #010000;
+$white: #ffffff;
+$lightGrey: #e6e6e6;
+$darkGrey: #333;
+$red: #ff1755;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: Quicksand;
+}
+
+/*a {
+    text-decoration: none;
+    @include transition(all, 0.4s, ease-in-out);
+    cursor: pointer;
+
+    &:hover{
+        color: $red;
+        @include transition(all, 0.4s, ease-in-out);
+    }
+}
+
+.container-fluid {
+    line-height: 24px;
+}
+*/
+
